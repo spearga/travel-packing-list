@@ -1,17 +1,15 @@
 <template>
   <MainLayout>
-    <div class="p-4 bg-white rounded shadow-md">
-      <h2 class="text-xl font-bold mb-4">Manage Categories</h2>
-      <div class="mb-4">
-        <input
-          v-model="newCategory"
-          @keyup.enter="addCategory"
-          placeholder="Add a new category"
-          class="border p-2 rounded mr-2"
-        />
-        <button @click="addCategory" class="bg-blue-500 text-white p-2 rounded">Add Category</button>
-      </div>
-      <ul>
+    <div class="p-6 bg-white rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4 text-blue-600">Manage Categories</h2>
+      <input
+        v-model="newCategory"
+        @keyup.enter="addCategory"
+        placeholder="Add a new category"
+        class="border p-2 rounded mr-2"
+      />
+      <button @click="addCategory" class="bg-blue-500 text-white p-2 rounded">Add Category</button>
+      <ul class="mt-4">
         <li v-for="(category, index) in categories" :key="index" class="flex items-center justify-between p-2 border-b">
           {{ category }}
           <button @click="deleteCategory(index)" class="bg-red-500 text-white p-1 rounded">Delete</button>

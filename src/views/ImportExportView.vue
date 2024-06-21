@@ -1,7 +1,7 @@
 <template>
     <MainLayout>
-      <div class="p-4 bg-white rounded shadow-md">
-        <h2 class="text-xl font-bold mb-4">Import and Export Data</h2>
+      <div class="p-6 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-4 text-blue-600">Import and Export Data</h2>
   
         <!-- Export Section -->
         <div class="mb-4">
@@ -10,7 +10,7 @@
   
         <!-- Import Section -->
         <div>
-          <h3 class="text-lg font-bold mb-2">Import CSV</h3>
+          <h3 class="text-lg font-bold mb-2 text-blue-600">Import CSV</h3>
           <input type="file" @change="handleFileUpload" class="border p-2 rounded" />
         </div>
       </div>

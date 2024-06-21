@@ -1,7 +1,7 @@
 <template>
   <MainLayout>
-    <div class="p-4 bg-white rounded shadow-md">
-      <h2 class="text-xl font-bold mb-4">Manage Bags</h2>
+    <div class="p-6 bg-white rounded shadow-md">
+      <h2 class="text-2xl font-bold mb-4 text-blue-600">Manage Bags</h2>
       <BagList />
     </div>
   </MainLayout>
